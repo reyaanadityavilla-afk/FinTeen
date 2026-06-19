@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#081d4d">
   <title>FinTeen AI</title>
-  <link rel="icon" href="finteen-icon.png">
+  <link rel="icon" href="assets/finteen-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <div class="app-shell">
     <aside class="sidebar">
       <a class="brand" href="#" data-view="dashboard" aria-label="FinTeen AI home">
-        <img class="brand-logo" src="finteen-icon.png" alt="">
+        <img class="brand-logo" src="assets/finteen-icon.png" alt="">
         <span><strong>FinTeen</strong><small>AI</small></span>
       </a>
 
@@ -45,7 +45,7 @@
         <button class="mobile-menu" aria-label="Open menu">☰</button>
         <div class="breadcrumb"><span>FinTeen AI</span><strong id="page-title">Overview</strong></div>
         <div class="top-actions">
-          <button class="learner-count" id="learner-count" title="Successful sign-ins on this app"><span>◎</span><strong>0</strong><small>learners joined</small></button>
+          <button class="learner-count" id="learner-count" title="Global learners joined"><span>◎</span><strong>—</strong><small>learners joined</small></button>
           <div class="streak hidden"><span>◆</span><strong></strong><small>day streak</small></div>
           <button class="icon-button" aria-label="Notifications">◌<span class="notification-dot"></span></button>
           <div class="avatar small">RV</div>
@@ -65,6 +65,10 @@
   <script src="accounting-data.js"></script>
   <script src="advanced-finance-data.js"></script>
   <script src="career-data.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="firebase-counter.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
