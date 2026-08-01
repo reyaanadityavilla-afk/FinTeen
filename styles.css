@@ -358,11 +358,20 @@ h3 { font-size: 15px; }
 .hidden { display: none !important; }
 .toast { position: fixed; right: 24px; bottom: 24px; z-index: 30; transform: translateY(20px); padding: 12px 17px; border-radius: 12px; color: white; background: var(--navy); font-size: 11px; opacity: 0; transition: .25s; box-shadow: var(--shadow); }
 .toast.show { transform: translateY(0); opacity: 1; }
-.onboarding { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 20% 10%,#e5efff,transparent 30%),linear-gradient(145deg,#f8fbff,#edf3fc); }
-.onboarding-card { width: min(440px,100%); padding: 32px; text-align: center; }
-.onboarding-logo { width: 190px; height: 110px; object-fit: contain; margin-bottom: 12px; }
-.onboarding-card form { margin-top: 25px; text-align: left; }
+.onboarding { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; overflow: auto; padding: 16px; background: radial-gradient(circle at 20% 10%,#e5efff,transparent 30%),linear-gradient(145deg,#f8fbff,#edf3fc); }
+.onboarding-card { width: min(440px,100%); padding: 22px 32px 24px; text-align: center; }
+.onboarding-logo { width: 155px; height: 78px; object-fit: contain; margin-bottom: 8px; }
+.onboarding-card h1 { font-size: clamp(29px,4.8vw,42px); line-height: 1.12; }
+.onboarding-card form { margin-top: 16px; text-align: left; }
+.onboarding-card .input-group { margin-bottom: 12px; }
+.onboarding-card .input-group input { padding: 10px 12px; border-radius: 11px; }
+.onboarding-card .button.full { padding: 12px 16px; border-radius: 13px; }
+.login-explainer { margin: 14px 0 0; padding: 12px 15px; text-align: left; color: #233252; background: linear-gradient(135deg,#f7faff,#eef5ff); border: 1px solid #dbe7fb; border-radius: 16px; box-shadow: inset 0 1px 0 rgba(255,255,255,.7); }
+.login-explainer strong { display: block; margin-bottom: 5px; color: var(--navy); font-size: 12px; }
+.login-explainer ol { margin: 0; padding-left: 19px; }
+.login-explainer li { margin: 4px 0; color: var(--muted); font-size: 10px; line-height: 1.42; }
 .form-error { min-height: 18px; margin: 0 0 8px; color: #b53d4b; font-size: 10px; }
+.form-error.success { color: #087a57; }
 .journey-card { padding: 36px; text-align: center; }
 .journey-card .insight-icon { margin: 0 auto 18px; }
 .landing-grid { grid-template-columns: minmax(0,1.05fr) minmax(280px,.95fr); align-items: stretch; margin-bottom: 20px; }
