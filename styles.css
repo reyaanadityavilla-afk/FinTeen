@@ -360,8 +360,8 @@ h3 { font-size: 15px; }
 .toast.show { transform: translateY(0); opacity: 1; }
 .onboarding { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; overflow: auto; padding: 16px; background: radial-gradient(circle at 20% 10%,#e5efff,transparent 30%),linear-gradient(145deg,#f8fbff,#edf3fc); }
 .onboarding-card { width: min(440px,100%); padding: 22px 32px 24px; text-align: center; }
-.onboarding-logo { width: 155px; height: 78px; object-fit: contain; margin-bottom: 8px; }
-.onboarding-card h1 { font-size: clamp(29px,4.8vw,42px); line-height: 1.12; }
+.onboarding-logo { width: 175px; height: 88px; object-fit: contain; margin-bottom: 6px; }
+.onboarding-card h1 { font-size: clamp(27px,4.1vw,36px); line-height: 1.12; white-space: nowrap; }
 .onboarding-card form { margin-top: 16px; text-align: left; }
 .onboarding-card .input-group { margin-bottom: 12px; }
 .onboarding-card .input-group input { padding: 10px 12px; border-radius: 11px; }
